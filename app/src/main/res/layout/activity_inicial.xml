@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="53dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_beer_stop" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="47dp"
+        android:fontFamily="@font/graduate"
+        android:text="Boas-Vindas!"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnCadastrar"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/btnCadastrar"
+        android:layout_width="260dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="295dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="298dp"
+        android:backgroundTint="@color/VermelhorClaro"
+        android:text="Cadastrar"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSair"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="#000000"
+        app:strokeWidth="3dp" />
+
+    <Button
+        android:id="@+id/btnComandas"
+        android:layout_width="260dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="168dp"
+        android:backgroundTint="@color/VermelhorClaro"
+        android:text="Comandas"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textRodape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCadastrar"
+        app:strokeWidth="3dp" />
+
+    <Button
+        android:id="@+id/btnSair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/Cinza"
+        android:text="Sair"
+        android:textColorHighlight="#888585"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textRodape"
+        app:layout_constraintTop_toBottomOf="@+id/btnCadastrar"
+        app:strokeWidth="2dp" />
+
+    <TextView
+        android:id="@+id/textRodape"
+        android:layout_width="104dp"
+        android:layout_height="53dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="16dp"
+        android:text="Auto Posto Seis
+                      Unidadede II
+                      Cianorte-Pr"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnSair"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnComandas" />
+</androidx.constraintlayout.widget.ConstraintLayout>
