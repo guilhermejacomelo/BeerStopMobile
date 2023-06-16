@@ -26,20 +26,12 @@ public class CadastrarOpcoesActivity extends AppCompatActivity {
             }
         });
 
-
-        Button btnFuncionario = findViewById(R.id.btnFuncionario);
-        btnFuncionario.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Lógica para ação do botão Funcionário
-            }
-        });
-
         Button btnProduto = findViewById(R.id.btnProduto);
         btnProduto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Lógica para ação do botão Produto
+                Intent intent = new Intent(CadastrarOpcoesActivity.this, CadastrarProdutoActivity.class);
+                startActivity(intent);
             }
         });
 

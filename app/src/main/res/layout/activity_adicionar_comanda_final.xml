@@ -3,7 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="56dp">
 
     <ImageView
         android:id="@+id/imageView2"
@@ -23,7 +25,7 @@
         android:layout_width="161dp"
         android:layout_height="94dp"
         android:backgroundTint="@color/VermelhorClaro"
-        android:text="Cadastrar Cliente"
+        android:text="Adicionar Comanda"
         android:textSize="18dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -48,58 +50,19 @@
         app:layout_constraintVertical_bias="0.023"
         app:strokeWidth="2dp" />
 
-    <EditText
-        android:id="@+id/editTextNome"
-        android:layout_width="250dp"
-        android:layout_height="45dp"
-        android:hint="Nome"
-        android:inputType="text"
-        android:maxLines="1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/editTextCPF"
-        android:layout_width="250dp"
-        android:layout_height="45dp"
-        android:hint="CPF"
-        android:inputType="text"
-        android:maxLines="1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.609" />
-
-    <EditText
-        android:id="@+id/editTextTelefone"
-        android:layout_width="250dp"
-        android:layout_height="45dp"
-        android:hint="Telefone"
-        android:ems="10"
-        android:inputType="phone"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.731" />
-
     <Button
-        android:id="@+id/btnCadastrarCliente"
+        android:id="@+id/btnConfirmarComandaFinal"
         android:layout_width="150dp"
         android:layout_height="60dp"
         android:backgroundTint="@color/Verde"
-        android:text="Cadastrar"
+        android:text="Confirmar"
         android:textSize="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.896" />
+        app:layout_constraintVertical_bias="0.847" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -107,46 +70,50 @@
         android:layout_height="17dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.365"
+        app:layout_constraintHorizontal_bias="0.37"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.873"
+        app:layout_constraintVertical_bias="0.826"
         app:srcCompat="@drawable/icone_mais" />
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+    <TextView
+        android:id="@+id/textViewNomeComanda"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:text="Nome"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.083"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.503"
-        app:srcCompat="@drawable/icone_login" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+    <TextView
+        android:id="@+id/textViewDescricaoProduto"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:text="Descricao"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.606"
-        app:srcCompat="@drawable/icone_cpf" />
+        app:layout_constraintVertical_bias="0.612" />
 
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+    <TextView
+        android:id="@+id/textViewQuantidadeProduto"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:text="Quantidade"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.727"
-        app:srcCompat="@drawable/icone_telefone" />
+        app:layout_constraintVertical_bias="0.709" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
